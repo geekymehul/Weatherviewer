@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:id="@+id/conditionImageview"
+        android:contentDescription="@string/weather_condition_image"
+        android:scaleType="fitCenter"
+        />
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:rowCount="3"
+        android:layout_weight="1"
+        android:useDefaultMargins="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/dayTextView"
+            android:layout_gravity="center"
+            android:layout_columnSpan="3"
+            android:layout_column="0"
+            android:layout_row="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/hitextView"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:id="@+id/lowtextView"
+            android:layout_columnWeight="1"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:layout_columnWeight="1"
+            android:id="@+id/humiditytextView"
+            android:layout_row="1"
+            android:layout_column="2" />
+    </GridLayout>
+
+
+</LinearLayout>
